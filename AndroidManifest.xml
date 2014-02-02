@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uy.com.smartech.reservas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="uy.com.smartech.reservas.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="uy.com.smartech.reservas.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="uy.com.smartech.reservas.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="uy.com.smartech.reservas.EntrarActiviti"
+            android:label="@string/title_activity_entrar_activiti" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uy.com.smartech.reservas.HomeActiviti"
+            android:label="@string/title_activity_home_activiti" >
+        </activity>
+        <activity
+            android:name="uy.com.smartech.reservas.RegistroActivity"
+            android:label="@string/title_activity_registro" >
+        </activity>
+    </application>
+
+</manifest>
